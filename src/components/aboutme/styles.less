@@ -1,0 +1,93 @@
+.about-container {
+  height: 400px;
+  position: relative;
+  .bg-about {
+    font-size: 112px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 0.8;
+    color: #555;
+    top: 12vh;
+    left: 25vw;
+    position: absolute;
+    z-index: 1;
+  }
+  .about-content {
+    position: absolute;
+    top: 16vh;
+    left: 45vw;
+    z-index: 2;
+    width: 600px;
+    .about-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 1240px) {
+    .bg-about {
+      left: 15vw;
+    }
+    .about-content {
+      top: 14vh;
+      width: 500px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .bg-about {
+      left: 5vw;
+    }
+    .about-content {
+      width: 400px;
+    }
+  }
+  @media (max-width: 768px) {
+    .bg-about {
+      font-size: 70px;
+    }
+    .about-content {
+      width: 400px;
+      left: 35vw;
+      .about-text {
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .about-content {
+      width: 300px;
+    }
+  }
+  @media (max-width: 480px) {
+    .bg-about {
+      font-size: 70px;
+    }
+    .about-content {
+      width: 250px;
+      .about-text {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    .bg-about {
+      font-size: 60px;
+    }
+    .about-content {
+      left: 30vw;
+      .about-text {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    .bg-about {
+      font-size: 50px;
+    }
+    .about-content {
+      left: 22vw;
+      .about-text {
+        font-size: 14px;
+      }
+    }
+  }
+}

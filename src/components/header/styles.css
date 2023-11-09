@@ -1,0 +1,49 @@
+header {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  gap: 40px;
+  margin: 5vh 15px 0 0;
+}
+nav ul li {
+  cursor: pointer;
+}
+.underlined,
+.underlined-mobile {
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.underlined:focus:after,
+.underlined:hover:after {
+  background-color: white;
+  transform: scaleX(1);
+}
+.underlined-mobile:focus:after,
+.underlined-mobile:hover:after {
+  background-color: #2bbca7;
+  transform: scaleX(1);
+}
+.underlined:after,
+.underlined-mobile:after {
+  bottom: -3px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  header {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
