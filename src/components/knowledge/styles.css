@@ -1,0 +1,28 @@
+.knowledge {
+  width: 60vw;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+.knowledge .knowledge-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.knowledge .knowledge-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.knowledge .knowledge-items .knowledge-column .column-name {
+  text-align: center;
+}
+.knowledge .knowledge-items .knowledge-item {
+  margin-bottom: 30px;
+}
+.knowledge .knowledge-items .knowledge-item img {
+  width: 96px;
+  height: 96px;
+}
+.knowledge .knowledge-items .knowledge-item .item-name {
+  text-align: center;
+}

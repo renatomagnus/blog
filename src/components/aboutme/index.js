@@ -4,16 +4,7 @@ const AboutMe = () => {
       <p className="bg-about uppercase">About me</p>
       <div className="about-content">
         <p className="about-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-          voluptatem quis quisquam consectetur quasi ipsum. Minus,
-          necessitatibus quam ratione vel magni, perspiciatis rerum laudantium
-          odio corrupti dolore vero blanditiis quibusdam.
-        </p>
-        <p className="about-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-          voluptatem quis quisquam consectetur quasi ipsum. Minus,
-          necessitatibus quam ratione vel magni, perspiciatis rerum laudantium
-          odio corrupti dolore vero blanditiis quibusdam.
+          Front-end developer who cares with self inprovement, everyday becoming a better developer, husband and friend.
         </p>
       </div>
     </section>

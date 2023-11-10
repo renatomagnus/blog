@@ -5,6 +5,7 @@ const Header = () => {
       <ul>
         <li className="underlined"><a href="/">Articles</a></li>
         <li className="underlined"><a href="/about">About</a></li>
+        <li className="underlined scratch"><a href="/portfolio">Portfolio</a></li>
       </ul>
     </nav>
   </header>

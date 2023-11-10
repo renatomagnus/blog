@@ -35,6 +35,23 @@
   display: flex;
   gap: 20px;
 }
+.posts-container .posts-content .post-item {
+  width: 13.5vw;
+  background-color: white;
+  border: 2px solid darkgoldenrod;
+  padding: 30px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.posts-container .posts-content .post-item h2 {
+  text-align: center;
+  color: #0c0c0e;
+}
+.posts-container .posts-content .post-item p {
+  color: #0c0c0e;
+  margin-top: 20px;
+}
 .posts-container .posts-content .post-image {
   height: 40vh;
   object-fit: cover;
