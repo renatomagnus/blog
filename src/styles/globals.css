@@ -328,6 +328,23 @@ nav ul li {
   display: block;
   margin: -10px 0 0 -5px;
 }
+.social-medias {
+  position: fixed;
+  right: 4vw;
+  bottom: 0;
+}
+.social-medias .social-medias-icons {
+  display: flex;
+  flex-direction: column;
+}
+.social-medias .social-medias-icons a img {
+  width: 50px;
+}
+.social-medias .social-medias-line {
+  height: 10vh;
+  border-left: 2px solid #555;
+  margin-left: 24px;
+}
 * {
   margin: 0;
   padding: 0;
