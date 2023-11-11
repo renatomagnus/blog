@@ -175,7 +175,7 @@ nav ul li {
 }
 .about-container {
   margin-top: 20vh;
-  height: 400px;
+  height: 250px;
   position: relative;
 }
 .about-container .bg-about {
@@ -269,9 +269,8 @@ nav ul li {
 }
 .knowledge {
   width: 60vw;
-  margin: 0 auto;
+  margin: 20vh auto;
   overflow: auto;
-  margin-bottom: 100px;
 }
 .knowledge .knowledge-title {
   text-align: center;
@@ -296,7 +295,7 @@ nav ul li {
   text-align: center;
 }
 .knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
-  margin-bottom: 156px;
+  margin-bottom: 96px;
 }
 .family {
   width: 60vw;

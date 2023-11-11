@@ -1,8 +1,7 @@
 .knowledge {
   width: 60vw;
-  margin: 0 auto;
+  margin: 20vh auto;
   overflow: auto;
-  margin-bottom: 100px;
 }
 .knowledge .knowledge-title {
   text-align: center;
@@ -27,5 +26,5 @@
   text-align: center;
 }
 .knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
-  margin-bottom: 156px;
+  margin-bottom: 96px;
 }
