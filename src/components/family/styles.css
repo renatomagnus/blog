@@ -1,0 +1,31 @@
+.family {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.family .family-text {
+  max-width: 50%;
+}
+.family .family-text h2,
+.family .family-text p {
+  margin-bottom: 40px;
+}
+.family .family-images {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.family .family-images .family-image {
+  margin: 10px auto 0;
+  width: 300px;
+  border: 2px solid #555;
+  padding: 0 10px 10px 0;
+}
+.family .family-images .family-image img {
+  width: 100%;
+  display: block;
+  margin: -10px 0 0 -5px;
+}

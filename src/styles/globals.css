@@ -174,6 +174,7 @@ nav ul li {
   text-wrap: balance;
 }
 .about-container {
+  margin-top: 20vh;
   height: 400px;
   position: relative;
 }
@@ -270,7 +271,7 @@ nav ul li {
   width: 60vw;
   margin: 0 auto;
   overflow: auto;
-  padding-bottom: 40px;
+  margin-bottom: 100px;
 }
 .knowledge .knowledge-title {
   text-align: center;
@@ -293,6 +294,40 @@ nav ul li {
 }
 .knowledge .knowledge-items .knowledge-item .item-name {
   text-align: center;
+}
+.knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
+  margin-bottom: 156px;
+}
+.family {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.family .family-text {
+  max-width: 50%;
+}
+.family .family-text h2,
+.family .family-text p {
+  margin-bottom: 40px;
+}
+.family .family-images {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.family .family-images .family-image {
+  margin: 10px auto 0;
+  width: 300px;
+  border: 2px solid #555;
+  padding: 0 10px 10px 0;
+}
+.family .family-images .family-image img {
+  width: 100%;
+  display: block;
+  margin: -10px 0 0 -5px;
 }
 * {
   margin: 0;

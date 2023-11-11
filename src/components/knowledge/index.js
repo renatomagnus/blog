@@ -13,7 +13,12 @@ const Knowledge = () => {
           <h3 className="column-name">Estruture</h3>
           <div className="knowledge-item">
             <img src="icons/html.png" alt="" />
-            <p className="item-name">Html</p>
+            <p className="item-name knowledge-margin-b">Html</p>
+          </div>
+          <h3 className="column-name">Tests</h3>
+          <div className="knowledge-item">
+            <img className="scale08" src="icons/cypress.png" alt="" />
+            <p className="item-name">Cypress</p>
           </div>
         </div>
         <div className="knowledge-column">
