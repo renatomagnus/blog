@@ -105,12 +105,12 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .posts-container .posts-content .cat-articles p {
   color: white;
   font-size: 1.125rem;
-  font-size: clamp(1rem, 4.5vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
   text-align: center;
   width: 50vw;
   text-wrap: balance;
@@ -123,8 +123,8 @@ nav ul li {
   width: 250px;
   aspect-ratio: 9 / 12;
   background-color: white;
-  border: 2px solid darkgoldenrod;
-  padding: 20px;
+  border: 2px solid #2862E9;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,6 +138,17 @@ nav ul li {
   margin-top: 20px;
   overflow: hidden;
 }
+.posts-container .posts-content .post-item .post-footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.posts-container .posts-content .post-item .post-footer .post-theme {
+  color: #2862E9;
+}
+.posts-container .posts-content .post-item .post-footer .post-date {
+  text-align: end;
+}
 .posts-container .posts-content .post-image {
   height: 40vh;
   object-fit: cover;
@@ -148,7 +159,6 @@ nav ul li {
     gap: 10px;
   }
   .posts-container .posts-content .posts-items .post-item {
-    padding: 10px 5px 10px 10px;
     width: 200px;
     height: 300px;
     font-size: 14px;
@@ -165,6 +175,9 @@ nav ul li {
   }
 }
 @media (max-width: 350px) {
+  .posts-container .posts-content {
+    margin-top: 35vh;
+  }
   .posts-container .posts-content .cat-articles {
     width: 40vw;
   }
@@ -177,13 +190,18 @@ nav ul li {
   width: 100vw;
 }
 #portfolio .portfolio-content {
-  width: 40vw;
+  width: 400px;
 }
 #portfolio .portfolio-content p {
   font-size: 18px;
   margin-bottom: 30px;
   text-align: center;
   text-wrap: balance;
+}
+@media (max-width: 450px) {
+  #portfolio .portfolio-content {
+    width: 300px;
+  }
 }
 .about-container {
   margin-top: 20vh;

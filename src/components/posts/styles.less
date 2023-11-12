@@ -1,3 +1,5 @@
+@color-css: #2862E9;
+
 .posts-container {
   overflow-x: auto;
   &::-webkit-scrollbar {
@@ -20,11 +22,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 20px;
+      padding: 0 10px;
       p {
         color: white;
         font-size: 1.125rem;
-        font-size: clamp(1rem, 4.5vw, 3rem);
+        font-size: clamp(1rem, 2.5vw, 1.8rem);
         text-align: center;
         width: 50vw;
         text-wrap: balance;
@@ -38,8 +40,8 @@
       width: 250px;
       aspect-ratio: 9 / 12;
       background-color: white;
-      border: 2px solid darkgoldenrod;
-      padding: 20px;
+      border: 2px solid @color-css;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -51,6 +53,17 @@
         color: #0c0c0e;
         margin-top: 20px;
         overflow: hidden;
+      }
+      .post-footer {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        .post-theme {
+          color: @color-css;
+        }
+        .post-date {
+          text-align: end;
+        }
       }
     }
     .post-image {
@@ -64,11 +77,10 @@
       .posts-items {
         gap: 10px;
         .post-item {
-          padding: 10px 5px 10px 10px;
           width: 200px;
           height: 300px;
           font-size: 14px;
-          text-wrap:balance;
+          text-wrap: balance;
         }
       }
       .cat-articles {
@@ -79,18 +91,19 @@
   @media (max-width: 520px) {
     .posts-content {
       .posts-items {
-      .post-item {
-        width: 160px;
-        height: 240px;
+        .post-item {
+          width: 160px;
+          height: 240px;
+        }
       }
     }
   }
-}
   @media (max-width: 350px) {
     .posts-content {
-        .cat-articles {
-          width: 40vw;
+        margin-top: 35vh;
+      .cat-articles {
+        width: 40vw;
+      }
+    }
   }
-  }
-}
 }
