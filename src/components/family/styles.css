@@ -1,25 +1,25 @@
 .family {
-  width: 60vw;
-  margin: 0 auto;
+  width: 900px;
+  margin: 20vh auto;
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
 }
 .family .family-text {
-  max-width: 50%;
+  max-width: 60%;
 }
 .family .family-text h2,
 .family .family-text p {
   margin-bottom: 40px;
 }
 .family .family-images {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 .family .family-images .family-image {
-  margin: 10px auto 0;
+  margin: 10px 0 0 auto;
   width: 300px;
   border: 2px solid #555;
   padding: 0 10px 10px 0;
@@ -28,4 +28,81 @@
   width: 100%;
   display: block;
   margin: -10px 0 0 -5px;
+}
+@media (max-width: 1080px) {
+  .family {
+    width: 780px;
+    margin: 20vh auto 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .family {
+    width: 538px;
+  }
+  .family .family-images .family-image {
+    margin: 10px 0 0 20px;
+  }
+}
+@media (max-width: 750px) {
+  .family {
+    width: 540px;
+    flex-direction: column;
+  }
+  .family .family-text {
+    max-width: 100%;
+  }
+  .family .family-images {
+    width: 520px;
+  }
+  .family .family-images .family-image {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .family {
+    width: 420px;
+  }
+  .family .family-images {
+    width: 400px;
+  }
+}
+@media (max-width: 530px) {
+  .family {
+    width: 350px;
+  }
+  .family .family-images {
+    width: 330px;
+  }
+}
+@media (max-width: 440px) {
+  .family {
+    width: 320px;
+  }
+  .family .family-images {
+    width: 300px;
+  }
+}
+@media (max-width: 410px) {
+  .family {
+    width: 290px;
+  }
+  .family .family-images {
+    width: 270px;
+  }
+}
+@media (max-width: 370px) {
+  .family {
+    width: 260px;
+  }
+  .family .family-images {
+    width: 240px;
+  }
+}
+@media (max-width: 340px) {
+  .family {
+    width: 240px;
+  }
+  .family .family-images {
+    width: 220px;
+  }
 }

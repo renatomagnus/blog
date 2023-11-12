@@ -26,7 +26,7 @@
 .posts-container .posts-content .cat-articles p {
   color: white;
   font-size: 1.125rem;
-  font-size: clamp(1.2rem, 4.5vw, 3rem);
+  font-size: clamp(1rem, 4.5vw, 3rem);
   text-align: center;
   width: 50vw;
   text-wrap: balance;
@@ -36,10 +36,11 @@
   gap: 20px;
 }
 .posts-container .posts-content .post-item {
-  width: 13.5vw;
+  width: 250px;
+  aspect-ratio: 9 / 12;
   background-color: white;
   border: 2px solid darkgoldenrod;
-  padding: 30px ;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,6 +52,7 @@
 .posts-container .posts-content .post-item p {
   color: #0c0c0e;
   margin-top: 20px;
+  overflow: hidden;
 }
 .posts-container .posts-content .post-image {
   height: 40vh;
@@ -58,18 +60,28 @@
   object-position: 100% center;
 }
 @media (max-width: 600px) {
-  .posts-container .posts-content {
-    margin-top: 55vh;
+  .posts-container .posts-content .posts-items {
+    gap: 10px;
   }
-  .posts-container .posts-content .post-image {
-    height: 30vh;
+  .posts-container .posts-content .posts-items .post-item {
+    padding: 10px 5px 10px 10px;
+    width: 200px;
+    height: 300px;
+    font-size: 14px;
+    text-wrap: balance;
+  }
+  .posts-container .posts-content .cat-articles {
+    padding: 0 10px;
   }
 }
-@media (max-width: 390px) {
-  .posts-container .posts-content {
-    margin-top: 60vh;
+@media (max-width: 520px) {
+  .posts-container .posts-content .posts-items .post-item {
+    width: 160px;
+    height: 240px;
   }
-  .posts-container .posts-content .post-image {
-    height: 24vh;
+}
+@media (max-width: 350px) {
+  .posts-container .posts-content .cat-articles {
+    width: 40vw;
   }
 }

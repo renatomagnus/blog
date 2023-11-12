@@ -110,7 +110,7 @@ nav ul li {
 .posts-container .posts-content .cat-articles p {
   color: white;
   font-size: 1.125rem;
-  font-size: clamp(1.2rem, 4.5vw, 3rem);
+  font-size: clamp(1rem, 4.5vw, 3rem);
   text-align: center;
   width: 50vw;
   text-wrap: balance;
@@ -120,10 +120,11 @@ nav ul li {
   gap: 20px;
 }
 .posts-container .posts-content .post-item {
-  width: 13.5vw;
+  width: 250px;
+  aspect-ratio: 9 / 12;
   background-color: white;
   border: 2px solid darkgoldenrod;
-  padding: 30px ;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,6 +136,7 @@ nav ul li {
 .posts-container .posts-content .post-item p {
   color: #0c0c0e;
   margin-top: 20px;
+  overflow: hidden;
 }
 .posts-container .posts-content .post-image {
   height: 40vh;
@@ -142,19 +144,29 @@ nav ul li {
   object-position: 100% center;
 }
 @media (max-width: 600px) {
-  .posts-container .posts-content {
-    margin-top: 55vh;
+  .posts-container .posts-content .posts-items {
+    gap: 10px;
   }
-  .posts-container .posts-content .post-image {
-    height: 30vh;
+  .posts-container .posts-content .posts-items .post-item {
+    padding: 10px 5px 10px 10px;
+    width: 200px;
+    height: 300px;
+    font-size: 14px;
+    text-wrap: balance;
+  }
+  .posts-container .posts-content .cat-articles {
+    padding: 0 10px;
   }
 }
-@media (max-width: 390px) {
-  .posts-container .posts-content {
-    margin-top: 60vh;
+@media (max-width: 520px) {
+  .posts-container .posts-content .posts-items .post-item {
+    width: 160px;
+    height: 240px;
   }
-  .posts-container .posts-content .post-image {
-    height: 24vh;
+}
+@media (max-width: 350px) {
+  .posts-container .posts-content .cat-articles {
+    width: 40vw;
   }
 }
 #portfolio {
@@ -271,10 +283,17 @@ nav ul li {
 .knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
   margin-bottom: 96px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .knowledge {
     width: 780px;
     margin: 20vh auto 0 20px;
+  }
+  .knowledge .knowledge-items .knowledge-item img {
+    width: 70px;
+    height: 70px;
+  }
+  .knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 900px) {
@@ -289,7 +308,7 @@ nav ul li {
 }
 @media (max-width: 640px) {
   .knowledge {
-    width: 540px;
+    width: 440px;
   }
   .knowledge .knowledge-items {
     display: flex;
@@ -307,28 +326,84 @@ nav ul li {
     height: 70px;
   }
 }
+@media (max-width: 530px) {
+  .knowledge {
+    width: 350px;
+  }
+  .knowledge .knowledge-title {
+    text-align: left;
+  }
+}
+@media (max-width: 440px) {
+  .knowledge {
+    width: 320px;
+    border-left: none;
+    padding-left: 0;
+  }
+  .knowledge .knowledge-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .knowledge .knowledge-items .knowledge-column .column-name {
+    text-align: center;
+    font-size: 16px;
+  }
+  .knowledge .knowledge-items .knowledge-item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .knowledge .knowledge-items .knowledge-item img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .knowledge .knowledge-items .knowledge-item .knowledge-margin-b {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 410px) {
+  .knowledge {
+    width: 290px;
+  }
+}
+@media (max-width: 370px) {
+  .knowledge {
+    width: 260px;
+  }
+  .knowledge .knowledge-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 340px) {
+  .knowledge {
+    width: 240px;
+  }
+}
 .family {
-  width: 60vw;
-  margin: 0 auto;
+  width: 900px;
+  margin: 20vh auto;
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
 }
 .family .family-text {
-  max-width: 50%;
+  max-width: 60%;
 }
 .family .family-text h2,
 .family .family-text p {
   margin-bottom: 40px;
 }
 .family .family-images {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 .family .family-images .family-image {
-  margin: 10px auto 0;
+  margin: 10px 0 0 auto;
   width: 300px;
   border: 2px solid #555;
   padding: 0 10px 10px 0;
@@ -337,6 +412,83 @@ nav ul li {
   width: 100%;
   display: block;
   margin: -10px 0 0 -5px;
+}
+@media (max-width: 1080px) {
+  .family {
+    width: 780px;
+    margin: 20vh auto 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .family {
+    width: 538px;
+  }
+  .family .family-images .family-image {
+    margin: 10px 0 0 20px;
+  }
+}
+@media (max-width: 750px) {
+  .family {
+    width: 540px;
+    flex-direction: column;
+  }
+  .family .family-text {
+    max-width: 100%;
+  }
+  .family .family-images {
+    width: 520px;
+  }
+  .family .family-images .family-image {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .family {
+    width: 420px;
+  }
+  .family .family-images {
+    width: 400px;
+  }
+}
+@media (max-width: 530px) {
+  .family {
+    width: 350px;
+  }
+  .family .family-images {
+    width: 330px;
+  }
+}
+@media (max-width: 440px) {
+  .family {
+    width: 320px;
+  }
+  .family .family-images {
+    width: 300px;
+  }
+}
+@media (max-width: 410px) {
+  .family {
+    width: 290px;
+  }
+  .family .family-images {
+    width: 270px;
+  }
+}
+@media (max-width: 370px) {
+  .family {
+    width: 260px;
+  }
+  .family .family-images {
+    width: 240px;
+  }
+}
+@media (max-width: 340px) {
+  .family {
+    width: 240px;
+  }
+  .family .family-images {
+    width: 220px;
+  }
 }
 .social-medias {
   position: fixed;
@@ -354,6 +506,16 @@ nav ul li {
   height: 10vh;
   border-left: 2px solid #555;
   margin-left: 24px;
+}
+@media (max-width: 440px) {
+  .social-medias .social-medias-icons a img {
+    width: 40px;
+  }
+  .social-medias .social-medias-line {
+    height: 10vh;
+    border-left: 2px solid #555;
+    margin-left: 19px;
+  }
 }
 * {
   margin: 0;

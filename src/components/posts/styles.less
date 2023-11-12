@@ -14,7 +14,6 @@
   .posts-content {
     display: flex;
     margin-top: 45vh;
-    // border: 2px solid red;
     padding-bottom: 10px;
     .cat-articles {
       width: 50vw;
@@ -25,7 +24,7 @@
       p {
         color: white;
         font-size: 1.125rem;
-        font-size: clamp(1.2rem, 4.5vw, 3rem);
+        font-size: clamp(1rem, 4.5vw, 3rem);
         text-align: center;
         width: 50vw;
         text-wrap: balance;
@@ -35,21 +34,23 @@
       display: flex;
       gap: 20px;
     }
-    .post-item{
-      width: 13.5vw;
+    .post-item {
+      width: 250px;
+      aspect-ratio: 9 / 12;
       background-color: white;
       border: 2px solid darkgoldenrod;
-      padding: 30px ;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      h2{
+      h2 {
         text-align: center;
         color: #0c0c0e;
       }
-      p{
+      p {
         color: #0c0c0e;
         margin-top: 20px;
+        overflow: hidden;
       }
     }
     .post-image {
@@ -60,18 +61,36 @@
   }
   @media (max-width: 600px) {
     .posts-content {
-      margin-top: 55vh;
-      .post-image {
-        height: 30vh;
+      .posts-items {
+        gap: 10px;
+        .post-item {
+          padding: 10px 5px 10px 10px;
+          width: 200px;
+          height: 300px;
+          font-size: 14px;
+          text-wrap:balance;
+        }
+      }
+      .cat-articles {
+        padding: 0 10px;
       }
     }
   }
-  @media (max-width: 390px) {
+  @media (max-width: 520px) {
     .posts-content {
-      margin-top: 60vh;
-      .post-image {
-        height: 24vh;
+      .posts-items {
+      .post-item {
+        width: 160px;
+        height: 240px;
       }
     }
   }
+}
+  @media (max-width: 350px) {
+    .posts-content {
+        .cat-articles {
+          width: 40vw;
+  }
+  }
+}
 }
