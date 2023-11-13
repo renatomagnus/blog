@@ -8,6 +8,8 @@
 @import url('../components/knowledge/styles.less');
 @import url('../components/family/styles.less');
 @import url('../components/socialmedias/styles.less');
+@import url('../pages/all-posts/styles.less');
+@import url('../components/article/styles.less'); 
 
 * {
   margin: 0;
@@ -37,8 +39,39 @@ body {
 .scale08{
   transform: scale(0.8);
 }
- 
 
+.underlined, .underlined-mobile, .underlined-articles {
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.underlined:focus:after,
+.underlined:hover:after {
+  background-color: white;
+  transform: scaleX(1);
+}
+.underlined-mobile:focus:after,
+.underlined-mobile:hover:after {
+  background-color: #2bbca7;
+  transform: scaleX(1);
+}
+.underlined-articles:focus:after,
+.underlined-articles:hover:after {
+  background-color: #555;
+  transform: scaleX(1);
+}
+.underlined:after, .underlined-mobile:after, .underlined-articles:after {
+  bottom: -3px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  width: 100%;
+}
 
 
 

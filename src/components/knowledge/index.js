@@ -71,7 +71,7 @@ const Knowledge = () => {
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/react.png" alt="" />
+            <img className="scale08" src="icons/react.png" alt="" />
             <p className="item-name">React.js</p>
           </a>
           <a
