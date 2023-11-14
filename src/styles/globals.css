@@ -94,7 +94,6 @@ nav ul li {
   width: 250px;
   aspect-ratio: 9 / 12;
   background-color: white;
-  border: 2px solid #2862E9;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -103,6 +102,7 @@ nav ul li {
 .posts-container .posts-content .post-item h2 {
   text-align: center;
   color: #0c0c0e;
+  font-size: 20px;
 }
 .posts-container .posts-content .post-item p {
   color: #0c0c0e;
@@ -113,9 +113,6 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-}
-.posts-container .posts-content .post-item .post-footer .post-theme {
-  color: #2862E9;
 }
 .posts-container .posts-content .post-item .post-footer .post-date {
   text-align: end;
@@ -524,6 +521,27 @@ nav ul li {
 .margin-top-20vh {
   margin-top: 20vh;
 }
+.article {
+  width: 900px;
+  margin: 20vh auto 30px;
+  border-left: 2px solid #555;
+  padding-left: 20px;
+}
+.article .article-title {
+  margin-bottom: 50px;
+}
+.article .article-paragraph {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.article-footer {
+  text-align: end;
+  font-weight: 700;
+  font-style: italic;
+  width: 900px;
+  height: 100px;
+  margin: 0 auto 100px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -586,4 +604,16 @@ body::-webkit-scrollbar {
   transform-origin: left;
   transition: transform 0.25s ease;
   width: 100%;
+}
+.css-border {
+  border: 2px solid #2862E9;
+}
+.learning-border {
+  border: 2px solid #FFD700;
+}
+.css-color {
+  color: #2862E9;
+}
+#learning-color {
+  color: #FFD700;
 }

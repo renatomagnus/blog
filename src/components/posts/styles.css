@@ -39,7 +39,6 @@
   width: 250px;
   aspect-ratio: 9 / 12;
   background-color: white;
-  border: 2px solid #2862E9;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -48,6 +47,7 @@
 .posts-container .posts-content .post-item h2 {
   text-align: center;
   color: #0c0c0e;
+  font-size: 20px;
 }
 .posts-container .posts-content .post-item p {
   color: #0c0c0e;
@@ -58,9 +58,6 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-}
-.posts-container .posts-content .post-item .post-footer .post-theme {
-  color: #2862E9;
 }
 .posts-container .posts-content .post-item .post-footer .post-date {
   text-align: end;

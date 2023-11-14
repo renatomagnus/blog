@@ -10,6 +10,7 @@
 @import url('../components/socialmedias/styles.less');
 @import url('../pages/all-posts/styles.less');
 @import url('../components/article/styles.less'); 
+@import url('../pages/posts/styles.less'); 
 
 * {
   margin: 0;
@@ -29,6 +30,9 @@ body {
     width: 0px;
   }
 }
+//COLORS
+@css: #2862E9;
+@learning: #FFD700;
 .uppercase{
   text-transform: uppercase;
 }
@@ -73,5 +77,16 @@ body {
   width: 100%;
 }
 
-
+.css-border{
+  border: 2px solid @css;
+}
+.learning-border{
+  border: 2px solid @learning;
+}
+.css-color{
+  color: @css;
+}
+#learning-color{
+  color: @learning;
+}
 
