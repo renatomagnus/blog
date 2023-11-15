@@ -11,7 +11,7 @@ const Posts = () => {
         </div>
         <div className="posts-items">
           <a
-            href="/posts/how-to-study-and-consume-programming-contents"
+            href={`/${i18n.languages?.[0]}/posts/how-to-study-and-consume-programming-contents`}
             className="post-item learning-border"
           >
             <h2>{t("posts.title1")}</h2>

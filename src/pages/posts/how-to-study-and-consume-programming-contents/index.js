@@ -37,6 +37,9 @@ const HowToStudyAndConsumeProgrammingContents = () => {
         <p className="article-paragraph">
         {t("article.text8")}
         </p>
+        <p className="article-paragraph">
+        {t("article.text9")}
+        </p>
       </article>
       <p className="article-footer">{t("article.footer")}</p>
 
