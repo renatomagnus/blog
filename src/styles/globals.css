@@ -515,8 +515,10 @@ nav ul li {
 }
 .articles .article-items .article-footer {
   margin-top: 10px;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  padding: 0 23px 3px 0;
 }
 .margin-top-20vh {
   margin-top: 20vh;
@@ -574,7 +576,6 @@ body::-webkit-scrollbar {
 .underlined-articles {
   position: relative;
   text-decoration: none;
-  white-space: nowrap;
 }
 .underlined:focus:after,
 .underlined:hover:after {

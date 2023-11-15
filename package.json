@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gulp":"gulp"
+    "gulp": "gulp"
   },
   "dependencies": {
     "next": "14.0.1",
+    "next-i18next": "^15.0.0",
     "react": "^18",
     "react-dom": "^18"
   },

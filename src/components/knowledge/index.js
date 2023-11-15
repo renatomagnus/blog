@@ -1,42 +1,43 @@
+import { useTranslation } from 'next-i18next'
+
 const Knowledge = () => {
+  const { t, i18n } = useTranslation('common')
+
   return (
     <section className="knowledge">
-      <h2 className="knowledge-title">What I use on my works</h2>
+      <h2 className="knowledge-title">{t("knowledge.title")}</h2>
       <p>
-        Disclaimer: Against most of the developers that I have seen, I don't aim
-        to study a lot of different languages and frameworks just to have a big
-        'hard skills' section on my resume that I supose to know. My goals is to
-        keep a few technologies and master than.
+        {t("knowledge.text")}
       </p>
       <div className="knowledge-items">
         <div className="knowledge-column">
-          <h3 className="column-name">Estruture</h3>
+          <h3 className="column-name">{t("knowledge.subtitle1")}</h3>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/html.png" alt="" />
+            <img src="/icons/html.png" alt="" />
             <p className="item-name knowledge-margin-b">Html</p>
           </a>
-          <h3 className="column-name">Tests</h3>
+          <h3 className="column-name">{t("knowledge.subtitle2")}</h3>
           <a
             href="https://docs.cypress.io/guides/overview/why-cypress"
             target="_blank"
             className="knowledge-item"
           >
-            <img className="scale08" src="icons/cypress.png" alt="" />
+            <img className="scale08" src="/icons/cypress.png" alt="" />
             <p className="item-name">Cypress</p>
           </a>
         </div>
         <div className="knowledge-column">
-          <h3 className="column-name">Design</h3>
+          <h3 className="column-name">{t("knowledge.subtitle3")}</h3>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/css.png" alt="" />
+            <img src="/icons/css.png" alt="" />
             <p className="item-name">Css</p>
           </a>
           <a
@@ -44,7 +45,7 @@ const Knowledge = () => {
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/sass.png" alt="" />
+            <img src="/icons/sass.png" alt="" />
             <p className="item-name">Sass</p>
           </a>
           <a
@@ -52,12 +53,12 @@ const Knowledge = () => {
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/less.png" alt="" />
+            <img src="/icons/less.png" alt="" />
             <p className="item-name">Less</p>
           </a>
         </div>
         <div className="knowledge-column">
-          <h3 className="column-name">Behavior</h3>
+          <h3 className="column-name">{t("knowledge.subtitle4")}</h3>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
@@ -71,7 +72,7 @@ const Knowledge = () => {
             target="_blank"
             className="knowledge-item"
           >
-            <img className="scale08" src="icons/react.png" alt="" />
+            <img className="scale08" src="/icons/react.png" alt="" />
             <p className="item-name">React.js</p>
           </a>
           <a
@@ -79,7 +80,7 @@ const Knowledge = () => {
             target="_blank"
             className="knowledge-item"
           >
-            <img src="icons/next.png" alt="" />
+            <img src="/icons/next.png" alt="" />
             <p className="item-name">Next.js</p>
           </a>
         </div>

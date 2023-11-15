@@ -1,0 +1,73 @@
+{
+  "header": {
+    "articles": "Articles",
+    "about": "About",
+    "portfolio": "Portfolio"
+  },
+  "about": {
+    "background": "About me",
+    "text": "Front-end developer who cares with self improvement, everyday becoming a better developer, husband, and friend."
+  },
+  "family": {
+    "title": "Family",
+    "text1": "In 2020 I met my wife at the bank where we worked. The pandemic kept us apart, but a few months later we started going out and it was the beginning of a beautiful journey of love and companionship. Today we are in college and have migrated to the technology area, me as a developer and she as a product manager and we work together from home.",
+    "text2": "Temos duas parceiras que nos atrapalham no dia a dia mas as amamos muito, a Hana e Alecrim, que tivemos o prazer de cuidarmos desde cedo e nos acompanham por onde vamos.",
+    "text3": "Nós moramos em Porto Alegre, adoramos ir ao cinema, andar de bicicleta, levar as gatas ao parque, comermos bem e passarmos tempo de qualidade com as famílias e amigos.",
+    "text4": ""
+  },
+  "knowledge": {
+    "title": "What I use on my works",
+    "text": "Disclaimer: Against most of the developers that I have seen, I don't aim to study a lot of different languages and frameworks just to have a big 'hard skills' section on my resume that I suppose to know. My goal is to keep a few technologies and master them.",
+    "subtitle1": "Estruture",
+    "subtitle2": "Tests",
+    "subtitle3": "Design",
+    "subtitle4": "Behavior"
+  },
+  "portfolio": {
+    "text": "I will soon be adding personal projects."
+  },
+  "posts": {
+    "phrase": "I write articles to appear intelligent",
+    "phrase2": "I hope it worked",
+    "title1": "How To Study and Consume Programming Contents",
+    "text1": "We are learning or lying to ourselves? Stop of just watch content and became a better programmer. A reflection about practice and procrastination with tech content for jr developers.",
+    "category1": "Learning",
+    "date1": "11/14/23",
+    "title2": "",
+    "text2": "",
+    "category2": "",
+    "date2": "",
+    "title3": "",
+    "text3": "",
+    "category3": "",
+    "date3": "",
+    "title4": "",
+    "text4": "",
+    "category4": "",
+    "date4": "",
+    "title5": "",
+    "text5": "",
+    "category5": "",
+    "date5": "",
+    "title6": "",
+    "text6": "",
+    "category6": "",
+    "date6": "",
+    "title7": "",
+    "text7": "",
+    "category7": "",
+    "date7": "",
+    "title8": "",
+    "text8": "",
+    "category8": "",
+    "date8": "",
+    "title9": "",
+    "text9": "",
+    "category9": "",
+    "date9": "",
+    "title10": "",
+    "text10": "",
+    "category10": "",
+    "date10": ""
+  }
+}
