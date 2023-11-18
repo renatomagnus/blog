@@ -24,16 +24,16 @@ const Posts = () => {
             </div>
           </a>
           <a
-            href="/posts/how-to-study-and-consume-programming-contents"
-            className="post-item learning-border"
+            href={`/${i18n.languages?.[0]}/posts/dont-use-css`}
+            className="post-item css-border"
           >
-            <h2>{t("posts.title1")}</h2>
+            <h2>{t("posts.title2")}</h2>
             <p>
-            {t("posts.text1")}
+            {t("posts.text2")}
             </p>
             <div className="post-footer">
-              <p id="learning-color">{t("posts.category1")}</p>
-              <p className="post-date">{t("posts.date1")}</p>
+              <p id="css-color">{t("posts.category2")}</p>
+              <p className="post-date">{t("posts.date2")}</p>
             </div>
           </a>
           <a

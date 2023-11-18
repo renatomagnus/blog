@@ -11,6 +11,14 @@
   margin-top: 20px;
   font-size: 18px;
 }
+.article .article-emphasis {
+  color: #ddd;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 40px;
+  font-style: italic;
+}
 .article-footer {
   text-align: end;
   font-weight: 700;

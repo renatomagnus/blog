@@ -536,6 +536,14 @@ nav ul li {
   margin-top: 20px;
   font-size: 18px;
 }
+.article .article-emphasis {
+  color: #ddd;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 40px;
+  font-style: italic;
+}
 .article-footer {
   text-align: end;
   font-weight: 700;
@@ -563,6 +571,9 @@ body::-webkit-scrollbar {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
 }
 .scratch {
   text-decoration: line-through;
@@ -612,7 +623,7 @@ body::-webkit-scrollbar {
 .learning-border {
   border: 2px solid #FFD700;
 }
-.css-color {
+#css-color {
   color: #2862E9;
 }
 #learning-color {
